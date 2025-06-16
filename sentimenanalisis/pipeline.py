@@ -28,7 +28,7 @@ def tokenize(text):
 
 # --- Load kamus normalisasi
 import pandas as pd
-normalized_word = pd.read_excel(r"D:\sentimenanalisis\kamuskatabaku.xlsx", header=None, names=["original", "normalized"])
+normalized_word = pd.read_excel("sentimenanalisis/kamuskatabaku.xlsx", header=None, names=["original", "normalized"])
 normalized_word = normalized_word.dropna()  # Remove rows with NaN values
 normalized_word_dict = dict(zip(normalized_word.iloc[:, 0], normalized_word.iloc[:, 1]))
 
@@ -37,7 +37,7 @@ def normalized_term(tokens):
     return [normalized_word_dict.get(term, term) for term in tokens]
 
 # --- Load stopwords
-txt_stopword = pd.read_csv(r"D:\sentimenanalisis\stopwordbahasa (1).txt", names=["stopwords"], header=None)
+txt_stopword = pd.read_csv("sentimenanalisis/stopwordbahasa (1).txt", names=["stopwords"], header=None)
 list_stopwords = set(txt_stopword["stopwords"])
 
 # --- Remove stopwords
