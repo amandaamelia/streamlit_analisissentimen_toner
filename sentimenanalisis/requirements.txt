@@ -1,13 +1,12 @@
+streamlit
 pandas
 numpy
-streamlit
 scikit-learn
-pip
 matplotlib
 seaborn
 nltk
 swifter
 Sastrawi
 wordcloud
-imblearn
+imbalanced-learn
 joblib
