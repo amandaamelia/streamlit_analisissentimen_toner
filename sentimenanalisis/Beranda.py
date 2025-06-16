@@ -5,11 +5,11 @@ from sklearn.metrics import confusion_matrix
 import seaborn as sns
 
 
-svm_model = joblib.load("svm_model.pkl")
-nb_model = joblib.load("naive_bayes_model.pkl")
-lr_model = joblib.load("logistic_regression_model.pkl")
-vectorizer = joblib.load("tfidf_vectorizer.pkl")
-label_encoder = joblib.load("label_encoder.pkl")
+svm_model = joblib.load("sentimenanalisis/svm_model.pkl")
+nb_model = joblib.load("sentimenanalisis/naive_bayes_model.pkl")
+lr_model = joblib.load("sentimenanalisis/logistic_regression_model.pkl")
+vectorizer = joblib.load("sentimenanalisis/tfidf_vectorizer.pkl")
+label_encoder = joblib.load("sentimenanalisis/label_encoder.pkl")
 
 
 # Make sure pipeline.py is in the same directory or provide the correct path
