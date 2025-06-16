@@ -3,11 +3,11 @@ from PIL import Image
 
 st.sidebar.success("Kamu sedang berada di menu Visualisasi")
 
-st.title("WordCloud Sentimen Positif")
+st.subheader("WordCloud Sentimen Positif")
 image = Image.open('wordcloud_positif.png')
 st.image(image, width = 600)
 
-st.title("WordCloud Sentimen Negatif")
+st.subheader("WordCloud Sentimen Negatif")
 image = Image.open('wordcloud_negatif.png')
 st.image(image, width = 600)
 
