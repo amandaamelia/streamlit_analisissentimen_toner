@@ -1,8 +1,8 @@
-pandas                : 2.2.3
-numpy                 : 2.2.6
+pandas
+numpy
 streamlit
 scikit-learn
-pip                   : 24.0
+pip
 matplotlib
 seaborn
 nltk
