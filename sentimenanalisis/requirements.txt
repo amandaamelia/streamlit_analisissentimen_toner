@@ -1,0 +1,14 @@
+pandas                : 2.2.3
+numpy                 : 2.2.6
+streamlit
+pickle
+scikit-learn
+pip                   : 24.0
+matplotlib
+seaborn
+nltk
+swifter
+Sastrawi
+wordcloud
+imblearn
+joblib
