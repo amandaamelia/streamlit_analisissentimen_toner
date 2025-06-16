@@ -28,7 +28,7 @@ def tokenize(text):
 
 # --- Load kamus normalisasi
 import pandas as pd
-normalized_word = pd.read_csv("sentimenanalisis/kamuskatabaku.csv", header=None, names=["original", "normalized"])
+normalized_word = pd.read_csv("sentimenanalisis/kamuskatabaku.csv", header=None)
 normalized_word = normalized_word.dropna()  # Remove rows with NaN values
 normalized_word_dict = dict(zip(normalized_word.iloc[:, 0], normalized_word.iloc[:, 1]))
 
