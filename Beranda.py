@@ -25,13 +25,14 @@ def preprocess_text(text):
     return ' '.join(tokens)
 
 # --- 5. Antarmuka Streamlit ---
-st.subheader("👋 Halo!  Selamat Datang di Web Analisis Sentimen Toner Eksfoliasi Sociolla! ✨")
-
 st.markdown("""
-    Aplikasi ini dirancang untuk menganalisis sentimen dari ulasan pengguna terhadap produk toner eksfoliasi pada platform Sociolla, menggunakan pendekatan berbasis Machine Learning.
-    Aplikasi ini siap bantu kamu mengenali apakah ulasan tersebut termasuk **positif✔️** atau **negatif❌** secara otomatis! Kamu bisa pilih model analisis 🔍: **SVM, Naive Bayes,** atau **Logistic Regression**
-
-""")
+<h2 style='text-align: center; color: #926363;'>👋 Halo!  Selamat Datang di Web Analisis Sentimen Toner Eksfoliasi Sociolla! ✨</h2>
+            
+<p style='text-align: center; font-size: 15px'>
+Aplikasi ini dirancang untuk menganalisis sentimen dari ulasan pengguna terhadap produk toner eksfoliasi pada platform Sociolla, menggunakan pendekatan berbasis Machine Learning.
+    Aplikasi ini siap bantu kamu mengenali apakah ulasan tersebut termasuk <b>positif✔️</b> atau <b>negatif❌</b> secara otomatis! Kamu bisa pilih model analisis 🔍: <b>SVM, Naive Bayes,</b> atau <b>Logistic Regression</b>
+</p>
+""", unsafe_allow_html=True)
 
 # Pilihan model
 models = {
