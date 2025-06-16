@@ -4,7 +4,7 @@ from PIL import Image
 st.sidebar.success("Kamu sedang berada di menu Classification Report")
 
 st.title("Classification Report SVM")
-image = Image.open('pages/cr_svm.png')
+image = Image.open("cr_svm.png")
 st.image(image, width = 400)
 st.markdown(
   """
@@ -22,7 +22,7 @@ st.markdown(
 )
 
 st.title("Classification Report Naive Bayes")
-image = Image.open('pages/cr_nb.png')
+image = Image.open("cr_nb.png")
 st.image(image, width = 400)
 st.markdown(
   """
@@ -40,7 +40,7 @@ st.markdown(
 )
 
 st.title("Classification Report Logistic Regression")
-image = Image.open('pages/cr_lr.png')
+image = Image.open("cr_lr.png")
 st.image(image, width = 400)
 st.markdown(
   """
